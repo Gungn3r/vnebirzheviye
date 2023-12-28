@@ -1,0 +1,53 @@
+/* Registration.module.scss */
+
+.registration-container {
+  display: flex;
+  flex-wrap: wrap; /* Разрешает оборачивание на новую строку */
+  justify-content: space-between;
+  margin: 20px; /* Регулируйте отступ по вашему усмотрению */
+}
+
+.registration-column {
+  width: 50%; /* Регулируйте ширину колонок по вашему усмотрению */
+
+  .input-group {
+    margin-bottom: 15px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .section-title {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+}
+
+/* Добавлено свойство margin-top для второй колонки */
+.registration-column:nth-child(2) {
+  margin-top: 65px; /* Регулируйте отступ по вашему усмотрению */
+}
+
+.register-button {
+  align-self: flex-end;
+  width: 50%; /* Растягиваем кнопку на всю ширину контейнера */
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
